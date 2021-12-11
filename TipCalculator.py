@@ -6,5 +6,5 @@ tip_as_percent = int(tip)/100
 Total_tip_amount = bill * tip_as_percent
 total_bill_amount = Total_tip_amount + bill
 bill_per_person = total_bill_amount/people
-each_person = round(bill_per_person, 2)
+each_person = round(bill_per_person, 2) #or "{:.2f}".format(bill_per+person)
 print(each_person)
