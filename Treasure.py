@@ -27,6 +27,13 @@ if passage == 'left':
     if swim_or_wait == 'wait':
         Door = input('You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose: \n').lower()
         if Door == 'yellow':
+                    treasure = input('In this treaure room, there are three items: a box, a round object and a triangular object. Choose one of the three to reveal your treasure: \n').lower()
+            if treasure == 'box':
+                print('Yay! You won youself a scholarship to MIT')
+            elif treasure == 'round object':
+                print('You\'ve got to pay for choosing this')
+            else:
+                print('Come back next time')
             print('Yay! You won youself a scholarship to MIT')
         elif Door == 'red':
             print('Ooch!. Sorry you got burned by fire')
